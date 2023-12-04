@@ -1,0 +1,48 @@
+.btn-danger{
+    color: white;
+    padding: 30px;
+    font-weight: bold; 
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 50px;
+}
+.mudarcor{
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+.b-cadastrar{
+    padding: 20px;
+}
+.teste {
+    background-color: #0838BC;
+    padding: 5%; /* Usando porcentagem para o preenchimento */
+    color: #FFFFFF;
+    max-width: 100%; /* Largura máxima para tornar responsivo */
+    border: 2px solid #FFFFFF;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2em; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+
+.letras{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+
+.btn {
+    width: 100%; /* Defina a largura do botão como 100% para corresponder ao elemento "teste" */
+    height: 100%;
+}
+.btn-lentes{
+    border-color: #0098F9;
+       border-radius: 5px;
+       margin-top: 10px;
+       width: 220px;
+       padding: 3.5px;
+}

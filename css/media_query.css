@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width:768px) {
+    body{
+        /* background-image: linear-gradient(180deg, #0838BC, #6f91f1); */
+        background-color: #f0f2f5;
+        
+    }
+    #nome, #senha{
+        width: 400px;
+    }
+    
+}
+@media screen and (min-width:992px) {
+    body{
+        background-color: #f0f2f5;
+    }
+    #nome, #senha{
+        width: 450px;
+    }
+}
