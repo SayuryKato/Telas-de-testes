@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@media screen and (max-width:767px) {
+    .letras{
+        font-size: 14px;
+    }
+    
+}
+
 @media screen and (min-width:768px) {
     body{
         /* background-image: linear-gradient(180deg, #0838BC, #6f91f1); */

@@ -1,13 +1,19 @@
 @charset "UTF-8";
 
+@media screen and (max-width:767px) {
+    .responsInput{
+        display: block;
+        font-size: 18px;
+        width: 230px;
+    }
+    
+}
+
 @media screen and (min-width:768px) {
     body{
         /* background-image: linear-gradient(180deg, #0838BC, #6f91f1); */
         background-color: #f0f2f5;
         
-    }
-    input#btnCadastro{
-        width: 100%;
     }
     
 }

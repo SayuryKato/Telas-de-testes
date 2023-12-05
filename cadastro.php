@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="cadastro.css">
     <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="../modelo_sistema/css/mediaQ_cadastro.css">
 </head>
 <body  style=" background-color:#F3F3F3">
     <nav class="navbar">
@@ -29,38 +30,38 @@
                 <fieldset>
                     <p>
                         <label for="numero_nota_fiscal"><strong>Número da Nota Fiscal:</strong></label>
-                        <input type="text" id="numero_nota_fiscal"  name="numero_nota_fiscal" required>
+                        <input class="responsInput" type="text" id="numero_nota_fiscal"  name="numero_nota_fiscal" required>
                     </p>
                 <p>
                     <label for="data_nota_fiscal" > <strong>Data da Nota Fiscal:</strong></label>
-                <input type="date" id="data_nota_fiscal" name="data_nota_fiscal" required>
+                <input class="responsInput" type="date" id="data_nota_fiscal" name="data_nota_fiscal" required>
                 </p>
                 <p>
                 <label for="fornecedor"> <strong>Fornecedor:</strong></label>
-                <input type="text" id="fornecedor" name="fornecedor" required>
+                <input class="responsInput" type="text" id="fornecedor" name="fornecedor" required>
                 </p>
                 <label for="marca"> <strong>Marca:</strong></label>
-                <input type="text" id="marca" name="marca"  >
+                <input class="responsInput" type="text" id="marca" name="marca"  >
             </fieldset>
             </div>    
          <div class="segundadiv">
             <fieldset>
                 <p>
                 <label for="codigo" > <strong>Código:</strong></label>
-                <input type="text" id="codigo" name="codigo"> 
+                <input class="responsInput" type="text" id="codigo" name="codigo"> 
                 </p>
                 <p>
                   <label for="quantidade"> <strong>Quantidade:</strong></label>
-                <input type="number" id="quantidade" name="quantidade" >  
+                <input class="responsInput" type="number" id="quantidade" name="quantidade" >  
                 </p>
                 
                 <p>
                   <label for="nome_produto" > <strong>Nome do Produto:</strong></label>
-                <input type="text" id="nome_produto" name="nome_produto">  
+                <input class="responsInput" type="text" id="nome_produto" name="nome_produto">  
                 </p>
                 <p>
                   <label for="preco_compra"> <strong>Preço do produto da  Compra:</strong></label>
-                <input type="number" step="0.01" id="preco_compra" name="preco_compra">
+                <input class="responsInput" type="number" step="0.01" id="preco_compra" name="preco_compra">
             
                 </p>
                 
@@ -72,21 +73,21 @@
            <fieldset>
           <p>
              <label for="desconto_percentual" > <strong>Desconto Percentual:</strong></label>
-            <input type="number" step="0.01" id="desconto_percentual" name="desconto_percentual" >
+            <input class="responsInput" type="number" step="0.01" id="desconto_percentual" name="desconto_percentual" >
           </p>
                
          <p>
             <label for="valor_final_compra" > <strong>Valor Final de Compra:</strong></label>
-            <input type="number" step="0.01" id="valor_final_compra" name="valor_final_compra" >
+            <input class="responsInput" type="number" step="0.01" id="valor_final_compra" name="valor_final_compra" >
          </p>
               
          <p>
             <label for="preco_venda_desejado"> <strong>Preço de Venda Desejado:</strong></label>
-            <input type="number" step="0.01" id="preco_venda_desejado" name="preco_venda_desejado">
+            <input class="responsInput" type="number" step="0.01" id="preco_venda_desejado" name="preco_venda_desejado">
          </p>
          <p>
            <label for="nome_produto_venda"> <strong>Nome do Produto na Venda:</strong></label>
-            <input type="text" id="nome_produto_venda" name="nome_produto_venda"> 
+            <input class="responsInput" type="text" id="nome_produto_venda" name="nome_produto_venda"> 
          </p>
          
             </fieldset>
@@ -95,7 +96,7 @@
 
         <p>
            <div class="input-group">
-                <input type="submit" id="btnCadastro" value="Cadastrar" style=" background-color: #0838BC; color: #fff; border: 1px solid #ccc; width:100%">
+                <input type="submit" id="btnCadastro" value="Cadastrar" style=" background-color: #0838BC; color: #fff; border: 1px solid #ccc;">
             </div> 
         </p>      
         </form>
