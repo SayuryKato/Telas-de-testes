@@ -12,7 +12,7 @@ if ($conn->connect_error) {
 $numero_nota_fiscal = $_POST['numero_nota_fiscal'];
 $data_nota_fiscal = $_POST['data_nota_fiscal'];
 $fornecedor = $_POST['fornecedor'];
-$marca = $_POST['marca'];
+$categoria = $_POST['categoria'];
 $codigo = $_POST['codigo'];
 $quantidade = $_POST['quantidade'];
 $nome_produto = $_POST['nome_produto'];
@@ -38,7 +38,7 @@ function gerarCodigoBarrasUnico() {
 $codigo_barras = gerarCodigoBarrasUnico();
 
 $sql = "INSERT INTO modelo (
-    id, numero_nota_fiscal, data_nota_fiscal, fornecedor, marca, codigo, codigo_barras, 
+    id, numero_nota_fiscal, data_nota_fiscal, fornecedor, categoria, codigo, codigo_barras, 
     quantidade, nome_produto, preco_compra, desconto_percentual, valor_final_compra, preco_venda_desejado, nome_produto_venda, preco_venda_calculado
 ) VALUES (
     NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?
@@ -46,7 +46,7 @@ $sql = "INSERT INTO modelo (
 
 $stmt = $conn->prepare($sql);
 
-$stmt->bind_param("ssssssdssdsssd", $numero_nota_fiscal, $data_nota_fiscal, $fornecedor, $marca, $codigo, $codigo_barras, 
+$stmt->bind_param("ssssssdssdsssd", $numero_nota_fiscal, $data_nota_fiscal, $fornecedor, $categoria, $codigo, $codigo_barras, 
     $quantidade, $nome_produto, $preco_compra, $desconto_percentual, $valor_final_compra, $preco_venda_desejado, $nome_produto_venda, $preco_venda_calculado);
 
 $stmt->execute();

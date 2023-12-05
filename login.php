@@ -8,17 +8,11 @@ session_start();
 // if (!$conexao) {
 //     die("Erro na conexão: " . mysqli_connect_error());
 // }
-// if ($usuario == $_POST['nome'] && $senha == $_POST['senha']) {
-//   $_SESSION['autenticado'] = true;
-//   header("location:inicial.php");
-//     exit;
-//   }else {
-//     // login inválido, exibe uma mensagem de erro
-//     echo "Nome de usuário ou senha inválidos.";
-//   mysqli_close($conexao);
-//   }
-$teste = true;
-if ($teste) {
+$teste=true;
+
+// if ($usuario == $_POST['nome'] && $senha == $_POST['senha']) 
+if ($teste) 
+{
   $_SESSION['autenticado'] = true;
   header("location:inicial.php");
     exit;

@@ -1,10 +1,6 @@
-@charset "UTF-8";
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
-    /* background-image: linear-gradient(180deg, #0838BC, #6f91f1); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +13,6 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
 form {
@@ -31,8 +26,6 @@ h2 {
 
 .input-group {
     margin-bottom: 15px;
-
-    position: relative; /*Sayury*/
 }
 
 label {
@@ -45,38 +38,15 @@ input {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
-    /* border-radius: 4px; */
-    
-    
-    border-radius: 25px; /*Sayury*/
-    /* box-shadow: rgba(0, 0, 0, 0.06) 1px 1px 8px 0px inset; */
-}
-
-#nome, #senha{ /*Sayury*/
-    background-color: rgba(169, 169, 169, 0.147);
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    width: 200px;
-
-    /* transition: width .5s;
-    transition-timing-function: ease; */
+    border-radius: 4px;
 }
 
 input[type="submit"] {
     background-color: #0838BC;
     color: #fff;
     cursor: pointer;
-    
-    width: 100%;        /*Sayury - botão ocupar todo o espaço*/
-    box-sizing: border-box;
 }
 
 input[type="submit"]:hover {
     background-color: #0838BC;
-}
-
-.material-symbols-outlined { /*Sayury*/
-    position: absolute;
-    top: 34px;
-    right: 14px;
-    cursor: pointer;
 }
